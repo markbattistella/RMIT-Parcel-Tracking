@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		A33714BB2490E8E900F0164C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714BA2490E8E900F0164C /* AppDelegate.swift */; };
 		A33714BD2490E8E900F0164C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714BC2490E8E900F0164C /* SceneDelegate.swift */; };
-		A33714BF2490E8E900F0164C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714BE2490E8E900F0164C /* ViewController.swift */; };
 		A33714C22490E8E900F0164C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33714C02490E8E900F0164C /* Main.storyboard */; };
 		A33714C42490E8EB00F0164C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33714C32490E8EB00F0164C /* Assets.xcassets */; };
 		A33714C72490E8EB00F0164C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33714C52490E8EB00F0164C /* LaunchScreen.storyboard */; };
+		A33714D22490EA7100F0164C /* ParcelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714D12490EA7100F0164C /* ParcelItem.swift */; };
+		A33714D42490EA9900F0164C /* ParcelListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714D32490EA9900F0164C /* ParcelListTableViewController.swift */; };
+		A33714D62490EAB800F0164C /* ParcelListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714D52490EAB800F0164C /* ParcelListTableViewCell.swift */; };
+		A33714D82490EACB00F0164C /* ParcelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33714D72490EACB00F0164C /* ParcelDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A33714B72490E8E900F0164C /* mbParcelTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbParcelTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33714BA2490E8E900F0164C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33714BC2490E8E900F0164C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A33714BE2490E8E900F0164C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A33714C12490E8E900F0164C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A33714C32490E8EB00F0164C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33714C62490E8EB00F0164C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A33714C82490E8EB00F0164C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33714D12490EA7100F0164C /* ParcelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelItem.swift; sourceTree = "<group>"; };
+		A33714D32490EA9900F0164C /* ParcelListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelListTableViewController.swift; sourceTree = "<group>"; };
+		A33714D52490EAB800F0164C /* ParcelListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelListTableViewCell.swift; sourceTree = "<group>"; };
+		A33714D72490EACB00F0164C /* ParcelDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 				A33714B82490E8E900F0164C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		A33714B82490E8E900F0164C /* Products */ = {
 			isa = PBXGroup;
@@ -56,15 +63,42 @@
 		A33714B92490E8E900F0164C /* mbParcelTracking */ = {
 			isa = PBXGroup;
 			children = (
+				A33714D02490EA2900F0164C /* Controller */,
+				A33714CF2490EA2300F0164C /* View */,
+				A33714CE2490EA1A00F0164C /* Model */,
 				A33714BA2490E8E900F0164C /* AppDelegate.swift */,
 				A33714BC2490E8E900F0164C /* SceneDelegate.swift */,
-				A33714BE2490E8E900F0164C /* ViewController.swift */,
-				A33714C02490E8E900F0164C /* Main.storyboard */,
 				A33714C32490E8EB00F0164C /* Assets.xcassets */,
-				A33714C52490E8EB00F0164C /* LaunchScreen.storyboard */,
 				A33714C82490E8EB00F0164C /* Info.plist */,
 			);
 			path = mbParcelTracking;
+			sourceTree = "<group>";
+		};
+		A33714CE2490EA1A00F0164C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A33714C02490E8E900F0164C /* Main.storyboard */,
+				A33714C52490E8EB00F0164C /* LaunchScreen.storyboard */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A33714CF2490EA2300F0164C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A33714D32490EA9900F0164C /* ParcelListTableViewController.swift */,
+				A33714D52490EAB800F0164C /* ParcelListTableViewCell.swift */,
+				A33714D72490EACB00F0164C /* ParcelDetailTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A33714D02490EA2900F0164C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A33714D12490EA7100F0164C /* ParcelItem.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33714BF2490E8E900F0164C /* ViewController.swift in Sources */,
+				A33714D42490EA9900F0164C /* ParcelListTableViewController.swift in Sources */,
+				A33714D82490EACB00F0164C /* ParcelDetailTableViewController.swift in Sources */,
 				A33714BB2490E8E900F0164C /* AppDelegate.swift in Sources */,
+				A33714D22490EA7100F0164C /* ParcelItem.swift in Sources */,
 				A33714BD2490E8E900F0164C /* SceneDelegate.swift in Sources */,
+				A33714D62490EAB800F0164C /* ParcelListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
