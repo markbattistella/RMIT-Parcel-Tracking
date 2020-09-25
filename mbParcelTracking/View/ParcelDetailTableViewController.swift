@@ -76,7 +76,7 @@ class ParcelDetailTableViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		switch indexPath {
 			case datePickerIndexPath :
-				return isPickerHidden ? 0 : deliveryDatePicker.frame.height
+				return isPickerHidden ? 0 : deliveryDatePicker.frame.height + 20
 			case notesTextIndexPath:
 				return largeCellHeight
 			case statusIndexPath :
